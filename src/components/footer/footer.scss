@@ -1,0 +1,55 @@
+@use 'styles/mixins/mixins' as *;
+@use 'styles/mixins/var' as *;
+@use 'styles/common/var' as *;
+
+/* footer */
+.footer {
+  // margin-top: 150px;
+  padding-top: 50px;
+  background-color: #245d7c;
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-container .footer-logo {
+  flex: 0.5;
+  padding: 0 10px;
+}
+
+.footer-container .footer-logo img {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.footer-container .footer-content {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.footer-container .footer-content > h4 {
+  font-size: 21px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.footer-container .footer-content div {
+  margin-bottom: 16px;
+}
+
+.footer-container .footer-content div span:not(:nth-child(1)) {
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+.copyright {
+  text-align: center;
+  font-weight: bold;
+  padding: 15px;
+  background-color: #134156;
+}

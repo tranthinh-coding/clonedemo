@@ -1,0 +1,34 @@
+@use 'styles/mixins/mixins' as *;
+@use 'styles/mixins/var' as *;
+@use 'styles/common/var' as *;
+
+@include b(container) {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include res(sm) {
+  @include b(container) {
+    max-width: $sm;
+  }
+}
+
+@include res(md) {
+  @include b(container) {
+    max-width: $md;
+  }
+}
+
+@include res(lg) {
+  @include b(container) {
+    max-width: $lg;
+  }
+}
+
+@include res(xl) {
+  @include b(container) {
+    max-width: $xl;
+  }
+}

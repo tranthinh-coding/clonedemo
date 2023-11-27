@@ -1,0 +1,5 @@
+export * from './header'
+export * from './main'
+export * from './posts'
+export * from './sidebar'
+export * from './footer'

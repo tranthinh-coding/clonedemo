@@ -1,0 +1,25 @@
+@use 'sass:map';
+
+@use 'styles/mixins/mixins' as *;
+@use 'styles/mixins/var' as *;
+@use 'styles/common/var' as *;
+
+@include b(header) {
+  &-wrapper {
+    box-shadow: 0 25px 20px -25px #00000009;
+    padding: 10px 0;
+    background-color: map.get($vsColor, 'background');
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  overflow: hidden;
+
+  @include e(logo) {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
